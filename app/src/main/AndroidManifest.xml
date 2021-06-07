@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:targetSandboxVersion="1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.koda.loonyliterature">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.tts.API_KEY"
+            android:value="AIzaSyDCOs3Rp5LM1kVlzAH_rFjyymuN4Paaf58">
+        </meta-data>
+        <activity
+            android:name=".HomePage">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/DialogTheme">
+        </activity>
+        <activity
+            android:name=".NewGameActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".StartGameActivity"
+            android:label="LoonyLiterature">
+        </activity>
+        <activity
+            android:name=".SaveStoryScreenActivity"
+            android:label="LooneyLiterature">
+        </activity>
+        <activity
+            android:name=".CategoriesActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ExitActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".SavedStoriesActivity"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+
+</manifest>
